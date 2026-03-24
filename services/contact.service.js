@@ -1,6 +1,7 @@
 // src/services/contact.service.js
 
-import { prisma } from "../lib/prisma";
+
+import { prisma } from "../lib/prisma.js";
 // 👉 Get all contacts
 export const getAllContacts = async () => {
   return await prisma.contact.findMany({
